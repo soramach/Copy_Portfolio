@@ -67,6 +67,13 @@ a {
   background-size: 100% 1px;
 }
 
+/* メインビジュアルclass */
+.page-main-visual {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
 #concept,
 #about,
 #skill,
@@ -226,5 +233,11 @@ a {
 
   #nav-input:checked ~ .nav-content {
     transform: translate(0%);
+  }
+
+  /* メインビジュアルclass */
+  .page-main-visual {
+    height: 50vh;
+    object-fit: cover;
   }
 }
