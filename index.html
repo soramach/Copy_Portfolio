@@ -3,9 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Copy Portfolio</title>
+    <title>まちのポートフォリオ（模写）</title>
+    <meta name="description" content="まちのポートフォリオサイト（模写）" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="assets/png" href="./assets/machi_icon.jpg" />
   </head>
   <body>
-    ポートフォリオの模写
+    <header class="wrapper page-header">
+      <h1>Machi's Portfolio</h1>
+      <div class="header-nav">
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="nav-input" type="checkbox" class="nav-input" />
+        <!-- ハンバーガーアイコン -->
+        <label for="nav-input" class="nav-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="nav-content">
+          <ul>
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#qa">Q&A</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="concept">concept</section>
+    <section id="about">about</section>
+    <section id="skill">skill</section>
+    <section id="work">work</section>
+    <section id="qa">qa</section>
   </body>
 </html>
