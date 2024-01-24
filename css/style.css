@@ -74,6 +74,27 @@ a {
   object-fit: cover;
 }
 
+/* Conceptクラス */
+.page-concept {
+  margin-top: 110px;
+}
+
+.concept-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.concept-content {
+  margin: 50px auto 0 auto;
+  max-width: 800px;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 2.4;
+}
+
 #concept,
 #about,
 #skill,
@@ -239,5 +260,22 @@ a {
   .page-main-visual {
     height: 50vh;
     object-fit: cover;
+  }
+
+  /* Conceptクラス */
+  .page-concept {
+    margin-top: 40px;
+  }
+
+  .concept-title {
+    font-size: 2rem;
+    letter-spacing: 5px;
+  }
+
+  .concept-content {
+    margin: 10px auto 0 auto;
+    max-width: 370px;
+    font-size: 1.6rem;
+    line-height: 2;
   }
 }
