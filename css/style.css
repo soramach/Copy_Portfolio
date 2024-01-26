@@ -95,8 +95,49 @@ a {
   line-height: 2.4;
 }
 
-#concept,
-#about,
+/* Abountクラス */
+.page-about {
+  position: relative;
+  margin-top: 110px;
+  height: 700px;
+}
+
+.about-head {
+  position: absolute;
+  left: 120px;
+  padding: 50px;
+  width: 550px;
+  min-height: 250px;
+  background: #fff;
+  z-index: 99;
+}
+
+.about-title {
+  font-size: 2.4rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-content {
+  margin: 30px auto 0 auto;
+  font-size: 1.6rem;
+  line-height: 2.4;
+}
+
+.about-image {
+  position: absolute;
+  top: 250px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.about-image img {
+  width: 100vw;
+  height: 350px;
+  object-fit: cover;
+}
+
 #skill,
 #work,
 #qa {
@@ -277,5 +318,54 @@ a {
     max-width: 370px;
     font-size: 1.6rem;
     line-height: 2;
+  }
+
+  /* Abountクラス */
+  .page-about {
+    margin-top: 40px;
+    margin: 50px 20px 0;
+    height: 600px;
+  }
+
+  .about-head {
+    position: static;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 0;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    margin: 10px auto 0 auto;
+    max-width: 100%;
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+
+  .about-image {
+    position: relative;
+    top: 0;
+    display: block;
+    margin-top: 40px;
+    height: 350px;
+  }
+
+  .about-image img {
+    position: absolute;
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .about-image-01 {
+  }
+
+  .about-image-02 {
+    right: 0;
+    bottom: 0;
   }
 }
