@@ -200,7 +200,82 @@ a {
   text-align: left;
 }
 
-#work,
+/* Workクラス */
+.page-work {
+  margin-top: 80px;
+}
+
+.work-title {
+  text-align: left;
+  font-size: 2.4rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.work-subtitle {
+  margin-top: 30px;
+  font-size: 1.6rem;
+}
+
+.work-content {
+  display: flex;
+  gap: 100px;
+  margin-top: 50px;
+}
+
+.work-item-title {
+  position: relative;
+}
+
+.work-item-title h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  padding: 10px 60px;
+  font-size: 1.8rem;
+  font-weight: normal;
+  background: #fff;
+  border: #333 solid 1px;
+}
+
+.work-item-description {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+
+.work-item-detail {
+  margin-top: 30px;
+}
+
+.detail-content span,
+p {
+  font-size: 1.4rem;
+}
+
+.detail-content span {
+  float: left;
+  position: relative;
+  width: 100px;
+}
+
+.detail-content span::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  height: 1px;
+  width: 10px;
+  background: #333;
+}
+
+.detail-content p {
+  float: right;
+  width: calc(100% - 100px);
+}
+
 #qa {
   height: 500px;
 }
@@ -487,5 +562,62 @@ a {
 
   .skill-content-item p {
     margin-top: 10px;
+  }
+
+  /* Workクラス */
+  .page-work {
+    margin-top: 60px;
+    width: 90%;
+  }
+
+  .work-title {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .work-subtitle {
+    margin-top: 20px;
+  }
+
+  .work-content {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .work-item {
+    margin-bottom: 50px;
+    height: 400px;
+  }
+
+  .work-item-title h3 {
+    padding: 8px 45px;
+    font-size: 1.6rem;
+  }
+
+  .work-item-description {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  .work-item-detail {
+    margin-top: 20px;
+  }
+
+  .detail-content span,
+  p {
+    font-size: 1.2rem;
+  }
+
+  .detail-content span {
+    width: 80px;
+  }
+
+  .detail-content span::after {
+    right: 10px;
+  }
+
+  .detail-content p {
+    width: calc(100% - 80px);
   }
 }
