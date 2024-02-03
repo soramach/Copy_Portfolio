@@ -137,7 +137,69 @@ a {
   object-fit: cover;
 }
 
-#skill,
+/* Skillクラス */
+.page-skill {
+  margin-top: 50px;
+}
+
+.skill-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.skill-content {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  margin: 40px auto 0 auto;
+  max-width: 90%;
+}
+
+.skill-content-item {
+  padding: 30px;
+  height: 400px;
+  text-align: center;
+  border: #333 solid 1px;
+}
+
+.skill-content-item span {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 55px;
+  border: #333 solid 3px;
+  border-radius: 50%;
+}
+
+.item-title {
+  margin-top: 30px;
+}
+
+.item-title img {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+}
+
+.item-title h3 {
+  margin-top: 8px;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.skill-content-item p {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
 #work,
 #qa {
   height: 500px;
@@ -367,5 +429,63 @@ a {
   .about-image-02 {
     right: 0;
     bottom: 0;
+  }
+
+  /* Skillクラス */
+  .page-skill {
+    margin-top: 50px;
+  }
+
+  .skill-title {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .skill-content {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .skill-content-item {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    height: 200px;
+  }
+
+  .skill-content-item span {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    font-size: 1.6rem;
+    line-height: 38px;
+    border: #333 solid 2px;
+  }
+
+  .item-right {
+    flex: 1;
+    margin-left: 20px;
+  }
+
+  .item-title {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .item-title img {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  .item-title h3 {
+    margin-top: 0;
+    margin-left: 10px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+
+  .skill-content-item p {
+    margin-top: 10px;
   }
 }
