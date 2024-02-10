@@ -279,7 +279,6 @@ p {
 /* QAクラス */
 .page-qa {
   margin-top: 80px;
-  margin-bottom: 200px;
 }
 
 .qa-title {
@@ -355,6 +354,30 @@ p {
   background: #f3f3f3;
   margin: 0 3% 3% 3%;
   padding: 4%;
+}
+
+/* Footerクラス */
+.page-footer {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.footer-title {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.footer-title::before {
+  position: absolute;
+  left: 45%;
+  top: -80px;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #ccc;
 }
 
 @media (max-width: 700px) {
@@ -752,5 +775,20 @@ p {
   .qa-item-answer {
     margin: 0 5% 5% 5%;
     padding: 5%;
+  }
+
+  /* Footerクラス */
+  .page-footer {
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+
+  .footer-title {
+    font-size: 1.6rem;
+  }
+
+  .footer-title::before {
+    left: 37%;
+    top: -60px;
   }
 }
