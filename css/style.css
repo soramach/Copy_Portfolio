@@ -276,8 +276,85 @@ p {
   width: calc(100% - 100px);
 }
 
-#qa {
-  height: 500px;
+/* QAクラス */
+.page-qa {
+  margin-top: 80px;
+  margin-bottom: 200px;
+}
+
+.qa-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.qa-content {
+  margin: 30px auto 0;
+  width: 100%;
+  max-width: 800px;
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.qa-content li {
+  margin: 30px auto;
+}
+
+.qa-content section {
+  min-height: 80px;
+  border: 1px solid #333;
+  border-radius: 15px;
+}
+
+.qa-item-title {
+  position: relative; /*+マークの位置基準とするためrelative指定*/
+  padding: 4% 10% 4% 5%;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: normal;
+  transition: all 1s ease;
+}
+
+.qa-item-title::before,
+.qa-item-title::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 2px;
+  background-color: #333;
+  -webkit-transition: all 700ms;
+  transition: all 700ms;
+}
+
+.qa-item-title::before {
+  top: 50%;
+  right: 40px;
+  transform: rotate(50deg);
+}
+
+.qa-item-title::after {
+  top: 50%;
+  right: 33px;
+  transform: rotate(130deg);
+}
+
+.qa-item-title.close::before {
+  right: 33px;
+  transform: rotate(50deg);
+}
+
+.qa-item-title.close::after {
+  right: 40px;
+  transform: rotate(130deg);
+}
+
+.qa-item-answer {
+  display: none;
+  background: #f3f3f3;
+  margin: 0 3% 3% 3%;
+  padding: 4%;
 }
 
 @media (max-width: 700px) {
@@ -619,5 +696,61 @@ p {
 
   .detail-content p {
     width: calc(100% - 80px);
+  }
+
+  /* QAクラス */
+  .page-qa {
+    margin-top: 60px;
+    width: 80%;
+  }
+
+  .qa-title {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .qa-content {
+    margin-top: 20px;
+  }
+
+  .qa-content li {
+    margin: 20px auto;
+  }
+
+  .qa-content section {
+    min-height: 70px;
+  }
+
+  .qa-item-title {
+    padding: 8% 12% 8% 6%;
+    font-size: 1.3rem;
+  }
+
+  .qa-item-title::before,
+  .qa-item-title::after {
+    width: 10px;
+  }
+
+  .qa-item-title::before {
+    top: 50%;
+    right: 25px;
+  }
+
+  .qa-item-title::after {
+    top: 50%;
+    right: 20px;
+  }
+
+  .qa-item-title.close::before {
+    right: 20px;
+  }
+
+  .qa-item-title.close::after {
+    right: 25px;
+  }
+
+  .qa-item-answer {
+    margin: 0 5% 5% 5%;
+    padding: 5%;
   }
 }
